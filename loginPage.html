@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<meta = "viewport" content="width=screen-width initial scale=1.0"/>
+<head>
+  <title>Login</title>
+  <style>
+    *{
+      box-sizing:border-box;
+    }
+    h1{
+      display:block;
+      color:black;
+      text-align:center;
+      margin-bottom:70px;
+      font-size:40px;
+      font-family:sans-serif;
+    }
+    input[type=email] {
+      width: 50%;
+      padding: 12px;
+      border: 1px solid gainsboro;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    input[type=password] {
+      width: 50%;
+      padding: 12px;
+      border: 1px solid gainsboro;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    input[type="submit"]{
+      color:yellow;
+      background:green;
+      border-radius:4px;
+      padding:12px;
+      font-size:24px;
+      font-family:monospace;
+    }
+    input[type=submit]:hover {
+      background-color: blue;
+    }
+    .container {
+      border-radius: 5px;
+      background-color: white;
+      padding: 20px;
+    }
+    .form-label {
+      color: black;
+      display: block;
+      font-family: monospace;
+      font-size: 24px;
+      margin-bottom: 27px;
+      margin-top: 53px;
+      text-align: left;
+    }
+    #register{
+      color:yellow;
+      background:red;
+      border-radius:4px;
+      padding:12px;
+      font-size:24px;
+      font-family:monospace;
+    }
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit], #register {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    a{
+      display:inline-block;
+      float:right;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1> SIGN IN </h1>
+<form action="http://www.uiprogrammer.com">
+  <div class="row">
+    <div class="col-25 form-label">
+  <label for="Username">User EmailId</label>
+    </div>
+    <div class="col-75">
+  <input type="email" placeholder="Enter username" pattern="user@gmail.com" required><br><br><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25 form-label">
+  <label for="Password">Password</label>
+    </div>
+    <div class="col-75">
+  <input type="password" placeholder="Enter password" pattern="123456" required><br><br><br>
+    </div>
+  </div>
+    <div class="row form-label">
+
+  <input type="checkbox" id="Always Remember" value="Always Remember">
+
+  <label for="Always Remember">Remember Me</label>
+  <a href="http://www.innova-path.com/">Forgot Username?</a><br><br>
+    </div>
+
+
+  <input type="submit" name="submit" value="LogIn">
+
+
+</form>
+  <div class="row">
+<a href="Registration Details.html"><button id="register">SignUp</button></a>
+  </div>
+</div>
+
+</body>
+</html>
