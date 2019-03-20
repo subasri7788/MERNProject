@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divselection</title>
+  <style>
+    div {
+      border: 1px solid black;
+      margin: 15px;
+    }
+  </style>
+</head>
+<body>
+<div><p>ONE</p>
+</div>
+<div><p>TWO</p>
+</div>
+<div><p>THREE</p>
+</div>
+<div><p>FOUR</p>
+</div>
+<div><p>FIVE</p>
+</div>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+  function myFunction() {
+    var mycollection= document.getElementsByTagName('div');
+    document.getElementById("demo").innerHTML = mycollection[0].innerHTML;
+  }
+</script>
+</body>
+</html>
